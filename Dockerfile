@@ -42,7 +42,7 @@ COPY files/vault/VAULT.dat ${TOMCAT_PATH}/conf/
 
 # Direcotry Permission
 RUN chmod 777 ${TOMCAT_PATH}/conf ${TOMCAT_PATH}/lib -R \
-  && chown -R 185:root ${TOMCAT_PATH}/conf ${TOMCAT_PATH}/lib
+  && chown -R 185:root ${TOMCAT_PATH}/conf ${TOMCAT_PATH}/lib ${TOMCAT_PATH}/webapps/simple
      
 # App 복사
 #ADD files/webapps/simple ${TOMCAT_PATH}/webapps/simple
